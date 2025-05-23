@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .publication-container {
+            font-family: Georgia, serif;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 6px;
+        }
+
+        .publication-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .coauthors {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+
+        .publication-meta {
+            margin-bottom: 15px;
+        }
+
+        .journal {
+            background: #3498db;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .year {
+            background: #27ae60;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .status {
+            background: #f39c12;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .abstract {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+            border-left: 3px solid #ecf0f1;
+        }
+
+        .abstract-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .media-coverage {
+            margin-top: 12px;
+            padding: 12px;
+            background: #e8f6f3;
+            border-radius: 4px;
+            border-left: 3px solid #1abc9c;
+        }
+
+        .media-coverage-label {
+            font-weight: 600;
+            color: #16a085;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+        }
+
+        .media-link {
+            color: #16a085;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .twitter-thread {
+            display: inline-block;
+            background: #1da1f2;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-top: 8px;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: #bdc3c7;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="publication-container">
+        
+        <div class="publication">
+            <h2 class="publication-title">Does Education Affect Attitudes Towards Immigration? Evidence from Germany</h2>
+            <div class="coauthors">Joint with Annemarie Paul and Thomas Siedler</div>
+            <div class="publication-meta">
+                <span class="journal">Journal of Human Resources</span>
+                <span class="year">2021</span>
+            </div>
+            <div class="abstract">
+                <div class="abstract-label">Abstract</div>
+                Using data from the German Socio-Economic Panel and exploiting the staggered implementation of a compulsory schooling reform in West Germany, this article finds that an additional year of schooling lowers the probability of being very concerned about immigration to Germany by around six percentage points. Furthermore, our findings imply significant spillovers from maternal education to immigration attitudes of her offspring. While we find no evidence for returns to education within a range of labour market outcomes, higher social trust appears to be an important mechanism behind our findings.
+            </div>
+            <div class="media-coverage">
+                <div class="media-coverage-label">Media Coverage</div>
+                <a href="#" class="media-link">Deutschlandfunk</a>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="publication">
+            <h2 class="publication-title">Low Emission Zones and Population Health</h2>
+            <div class="publication-meta">
+                <span class="journal">Journal of Health Economics</span>
+                <span class="year">2021</span>
+            </div>
+            <div class="abstract">
+                <div class="abstract-label">Abstract</div>
+                Air pollution has a major detrimental impact on population health but little is known about the effectiveness of policy measures targeting pollution. I exploit the staggered implementation of low emission zones in large cities in Germany as a natural experiment to assess their health impact. Using outpatient and inpatient health care data, I demonstrate that low emission zones reduce the number of patients with cardiovascular diagnoses by 2-3 percent. This effect is particularly pronounced for the elderly above 65.
+            </div>
+            <a href="#" class="twitter-thread">📱 Twitter Thread</a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="publication">
+            <h2 class="publication-title">Do Internships Pay Off? The Effects of Student Internships on Earnings</h2>
+            <div class="coauthors">Joint with Nils Saniter, Mathias Schumann and Thomas Siedler</div>
+            <div class="publication-meta">
+                <span class="journal">Journal of Human Resources</span>
+                <span class="year">2022</span>
+            </div>
+            <div class="abstract">
+                <div class="abstract-label">Abstract</div>
+                This paper studies the causal effect of student internship experience in firms on earnings later in life. We use mandatory firm internships at German universities as an instrument for doing a firm internship while attending university. Employing longitudinal data from graduate surveys, we find positive and significant earnings returns of about 5% in both OLS and IV regressions. The positive returns are particularly pronounced for individuals and areas of study that are characterized by a weak labor market orientation. The empirical findings show that graduates who completed a firm internship face a lower risk of unemployment during the first year of their careers, suggesting a smoother transition to the labor market.
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="publication">
+            <h2 class="publication-title">Replication of Atwood's (2022) "The Long-Term Effects of Measles Vaccination on Earnings and Employment"</h2>
+            <div class="coauthors">Joint with Mara Barschkett, Mathias Huebener, Andreas Leibing, and Jan Marcus</div>
+            <div class="publication-meta">
+                <span class="journal">Journal of Comments and Replications in Economics</span>
+                <span class="status">Accepted</span>
+            </div>
+            <div class="abstract">
+                <div class="abstract-label">Abstract</div>
+                Atwood (2022) analyzes the effects of the 1963 U.S. measles vaccination on long-run labor market outcomes, using a generalized difference-in-differences approach. We reproduce the results of this paper and perform a battery of robustness checks. Overall, we confirm that the measles vaccination had positive labor market effects. While the negative effect on the likelihood of living in poverty and the positive effect on the probability of being employed are very robust across the different specifications, the headline estimate—the effect on earnings—is more sensitive to the exclusion of certain regions and survey years.
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="publication">
+            <h2 class="publication-title">War, International Spillovers, and Adolescents: Evidence from Russia's Invasion of Ukraine in 2022</h2>
+            <div class="coauthors">With Silke Anger, Bernhard Christoph, Agata Galkiewicz, Frauke Peter, Malte Sandner and Thomas Siedler</div>
+            <div class="publication-meta">
+                <span class="journal">Journal of Economic Behavior and Organization</span>
+                <span class="status">Forthcoming</span>
+            </div>
+            <div class="abstract">
+                <div class="abstract-label">Abstract</div>
+                Using novel longitudinal data, this paper studies the short- and medium-term effects of Russia's invasion of Ukraine on February 24, 2022 on social trust of adolescents in Germany. Comparing adolescents who responded to our survey shortly before the start of the war with those who responded shortly after the conflict began and applying difference-in-differences (DiD) models over time, we find a significant decline in the outcome after the war started. These findings provide new evidence on how armed conflicts influence social trust and well-being among young people in a country not directly involved in the war.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
