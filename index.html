@@ -28,7 +28,7 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(160, 174, 192, 0.1);
         }
 
         .nav-container {
@@ -43,7 +43,7 @@
         .logo {
             font-size: 1.4em;
             font-weight: 600;
-            color: #2c3e50;
+            color: #2d3748;
         }
 
         .nav-links {
@@ -54,13 +54,13 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #2c3e50;
+            color: #4a5568;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: #3498db;
+            color: #81c7d4;
         }
 
         /* Main Content */
@@ -77,19 +77,38 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             margin-bottom: 40px;
-            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-photo {
+            flex: 0 0 200px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(160, 174, 192, 0.2);
+            border: 3px solid #e2e8f0;
         }
 
         .hero h1 {
             font-size: 2.2em;
-            color: #2c3e50;
+            color: #2d3748;
             margin-bottom: 8px;
             font-weight: 400;
         }
 
         .hero .title {
             font-size: 1.1em;
-            color: #666;
+            color: #718096;
             margin-bottom: 25px;
             font-weight: 400;
         }
@@ -97,7 +116,7 @@
         .hero .bio {
             font-size: 1em;
             line-height: 1.6;
-            color: #555;
+            color: #4a5568;
             margin-bottom: 25px;
         }
 
@@ -116,15 +135,15 @@
 
         .affiliation::before {
             content: "• ";
-            color: #3498db;
+            color: #81c7d4;
         }
 
         .cv-button {
             display: inline-block;
-            background: #f8f9fa;
-            color: #2c3e50;
+            background: #f0f8f8;
+            color: #2d3748;
             padding: 8px 20px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #bee3f8;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 500;
@@ -133,8 +152,8 @@
         }
 
         .cv-button:hover {
-            background: #e9ecef;
-            border-color: #adb5bd;
+            background: #e6fffa;
+            border-color: #81c7d4;
         }
 
         /* Section Headers */
@@ -161,64 +180,24 @@
             font-style: italic;
         }
 
-        /* Research Interests */
-        .research-interests {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            margin-bottom: 50px;
-        }
-
-        .interests-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .interest-card {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #3498db;
-            transition: all 0.3s ease;
-        }
-
-        .interest-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .interest-card h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-
-        .interest-card p {
-            color: #666;
-            font-size: 0.95em;
-        }
-
         /* Publications */
         .publication {
             background: white;
             margin-bottom: 25px;
             padding: 25px;
-            border-left: 3px solid #e9ecef;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border-left: 3px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(160, 174, 192, 0.1);
             border-radius: 4px;
         }
 
         .publication:hover {
-            border-left-color: #3498db;
+            border-left-color: #81c7d4;
         }
 
         .publication-title {
             font-size: 1.4em;
             font-weight: 600;
-            color: #2c3e50;
+            color: #2d3748;
             margin-bottom: 12px;
             line-height: 1.4;
         }
@@ -232,7 +211,7 @@
         }
 
         .journal {
-            background: #3498db;
+            background: #81c7d4;
             color: white;
             padding: 6px 16px;
             border-radius: 20px;
@@ -241,8 +220,8 @@
         }
 
         .year {
-            background: #27ae60;
-            color: white;
+            background: #a8dadc;
+            color: #2d3748;
             padding: 6px 16px;
             border-radius: 20px;
             font-size: 0.9em;
@@ -250,25 +229,25 @@
         }
 
         .status-badge {
-            background: #f8f9fa;
-            color: #495057;
+            background: #f7fafc;
+            color: #4a5568;
             padding: 4px 10px;
             border-radius: 4px;
             font-size: 0.85em;
             font-weight: 500;
-            border: 1px solid #dee2e6;
+            border: 1px solid #e2e8f0;
         }
 
         .rr-badge {
-            background: #fff3cd;
-            color: #856404;
-            border-color: #ffeaa7;
+            background: #fef5e7;
+            color: #744210;
+            border-color: #f6e05e;
         }
 
         .under-review-badge {
-            background: #d1ecf1;
-            color: #0c5460;
-            border-color: #bee5eb;
+            background: #e6fffa;
+            color: #285e61;
+            border-color: #81e6d9;
         }
 
         .draft-contact {
@@ -279,35 +258,35 @@
         }
 
         .working-paper {
-            background: #fafafa;
-            border-left-color: #6c757d;
+            background: #faf5ff;
+            border-left-color: #b794f6;
         }
 
         .work-in-progress {
-            background: #f8f9fa;
-            border-left-color: #adb5bd;
+            background: #f7fafc;
+            border-left-color: #cbd5e0;
         }
 
         .coauthors {
-            color: #7f8c8d;
+            color: #718096;
             font-style: italic;
             font-size: 0.95em;
             margin-bottom: 15px;
         }
 
         .abstract {
-            background: #f8f9fa;
+            background: #f7fafc;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
             font-size: 0.95em;
             line-height: 1.7;
-            border-left: 3px solid #ecf0f1;
+            border-left: 3px solid #e2e8f0;
         }
 
         .abstract-label {
             font-weight: 600;
-            color: #2c3e50;
+            color: #2d3748;
             margin-bottom: 10px;
             font-size: 0.9em;
             text-transform: uppercase;
@@ -317,20 +296,20 @@
         .media-coverage {
             margin-top: 15px;
             padding: 15px;
-            background: #e8f6f3;
+            background: #f0fff4;
             border-radius: 6px;
-            border-left: 3px solid #1abc9c;
+            border-left: 3px solid #9ae6b4;
         }
 
         .media-coverage-label {
             font-weight: 600;
-            color: #16a085;
+            color: #38a169;
             margin-bottom: 8px;
             font-size: 0.9em;
         }
 
         .media-link {
-            color: #16a085;
+            color: #38a169;
             text-decoration: none;
             font-weight: 500;
         }
@@ -341,8 +320,8 @@
 
         .twitter-thread {
             display: inline-block;
-            background: #1da1f2;
-            color: white;
+            background: #bee3f8;
+            color: #2b6cb0;
             padding: 8px 16px;
             border-radius: 20px;
             text-decoration: none;
@@ -352,14 +331,13 @@
         }
 
         .twitter-thread:hover {
-            background: #0d8bd9;
-            transform: translateY(-1px);
+            background: #90cdf4;
         }
 
         /* Footer */
         .footer {
-            background: #2c3e50;
-            color: white;
+            background: #2d3748;
+            color: #e2e8f0;
             text-align: center;
             padding: 40px 20px;
             margin-top: 50px;
@@ -391,11 +369,26 @@
                 display: none;
             }
             
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+            
+            .hero-photo {
+                flex: none;
+            }
+            
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+            
             .hero h1 {
                 font-size: 2.2em;
             }
             
-            .hero, .publication, .research-interests {
+            .hero, .publication {
                 padding: 25px 20px;
             }
             
@@ -406,10 +399,6 @@
             .publication-meta {
                 flex-direction: column;
                 align-items: flex-start;
-            }
-            
-            .interests-grid {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -426,7 +415,7 @@
                 background: none;
                 border: none;
                 font-size: 1.5em;
-                color: #2c3e50;
+                color: #2d3748;
             }
         }
     </style>
@@ -452,20 +441,26 @@
     <div class="container">
         <!-- Hero Section -->
         <section id="about" class="hero">
-            <h1>Shushan Margaryan</h1>
-            <div class="title">Economist & Postdoctoral Researcher</div>
+            <div class="hero-content">
+                <h1>Shushan Margaryan</h1>
+                <div class="title">Economist & Postdoctoral Researcher</div>
+                
+                <div class="affiliations">
+                    <span class="affiliation">University of Potsdam</span>
+                    <span class="affiliation">Berlin School of Economics</span>
+                    <span class="affiliation">IZA Research Fellow</span>
+                </div>
+
+                <div class="bio">
+                    I am a postdoctoral researcher at the Department of Economics of the University of Potsdam, a member of Berlin School of Economics and research fellow at IZA. I am a co-PI at DFG Research Unit on Labor Market Transformations. My primary research interests are in applied microeconomics, particularly economics of education, labour economics, and health economics.
+                </div>
+
+                <a href="https://www.dropbox.com/s/d5du3iikgzxynp5/cv_margaryan.pdf?dl=0" class="cv-button" target="_blank">Download CV</a>
+            </div>
             
-            <div class="affiliations">
-                <span class="affiliation">University of Potsdam</span>
-                <span class="affiliation">Berlin School of Economics</span>
-                <span class="affiliation">IZA Research Fellow</span>
+            <div class="hero-photo">
+                <img src="Shu-4.jpg" alt="Shushan Margaryan" class="profile-photo">
             </div>
-
-            <div class="bio">
-                I am a postdoctoral researcher at the Department of Economics of the University of Potsdam, a member of Berlin School of Economics and research fellow at IZA. I am a co-PI at DFG Research Unit on Labor Market Transformations. My primary research interests are in applied microeconomics, particularly economics of education, labour economics, and health economics.
-            </div>
-
-            <a href="https://www.dropbox.com/s/d5du3iikgzxynp5/cv_margaryan.pdf?dl=0" class="cv-button" target="_blank">Download CV</a>
         </section>
 
         <!-- Research Interests -->
