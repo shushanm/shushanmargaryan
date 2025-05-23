@@ -309,7 +309,7 @@
         }
 
         .media-link {
-            color: #a169;
+            color: #38a169;
             text-decoration: none;
             font-weight: 500;
         }
@@ -330,8 +330,148 @@
             transition: all 0.3s ease;
         }
 
-        .twitter-thread:hover {
-            background: #90cdf4;
+        .talk-item, .conference-year {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 3px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(160, 174, 192, 0.1);
+            border-radius: 4px;
+        }
+
+        .talk-item:hover, .conference-year:hover {
+            border-left-color: #81c7d4;
+        }
+
+        .talk-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .talk-list {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .year-header {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .conference-list {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .teaching-item {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 3px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(160, 174, 192, 0.1);
+            border-radius: 4px;
+        }
+
+        .teaching-item:hover {
+            border-left-color: #81c7d4;
+        }
+
+        .institution {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .course {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        .course-name {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .course-level {
+            font-style: italic;
+            color: #718096;
+            font-size: 0.9em;
+        }
+
+        .talk-item, .conference-year {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 3px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(160, 174, 192, 0.1);
+            border-radius: 4px;
+        }
+
+        .talk-item:hover, .conference-year:hover {
+            border-left-color: #81c7d4;
+        }
+
+        .talk-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .talk-list {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .year-header {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .conference-list {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .teaching-item {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 3px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(160, 174, 192, 0.1);
+            border-radius: 4px;
+        }
+
+        .teaching-item:hover {
+            border-left-color: #81c7d4;
+        }
+
+        .institution {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .course {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        .course-name {
+            font-weight: 600;
+            color: #2d3748;
         }
 
         /* Footer */
@@ -428,9 +568,8 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#working-papers">Working Papers</a></li>
-                <li><a href="#work-in-progress">Work in Progress</a></li>
+                <li><a href="#talks">Talks & Conferences</a></li>
+                <li><a href="#teaching">Teaching</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-nav">☰</button>
@@ -443,7 +582,7 @@
         <section id="about" class="hero">
             <div class="hero-content">
                 <h1>Shushan Margaryan</h1>
-                <div class="title">Postdoctoral Researcher</div>
+                <div class="title">Economist & Postdoctoral Researcher</div>
                 
                 <div class="affiliations">
                     <span class="affiliation">University of Potsdam</span>
@@ -463,20 +602,15 @@
             </div>
         </section>
 
-        <!-- Research Interests -->
+        <!-- Research -->
         <section id="research" class="section">
             <div class="section-header">
-                <h2 class="section-title">Research Interests</h2>
+                <h2 class="section-title">Research</h2>
                 <p class="section-subtitle">Applied Microeconomics with Focus on Economics of Education, Labour Economics, and Health Economics</p>
             </div>
-        </section>
 
-        <!-- Publications -->
-        <section id="publications" class="section">
-            <div class="section-header">
-                <h2 class="section-title">Publications</h2>
-                <p class="section-subtitle">Peer-Reviewed Research & Ongoing Work</p>
-            </div>
+            <!-- Publications -->
+            <h3 class="subsection-title">Publications</h3>
 
             <div class="publication">
                 <h3 class="publication-title">Does Education Affect Attitudes Towards Immigration? Evidence from Germany</h3>
@@ -546,13 +680,9 @@
                     Using novel longitudinal data, this paper studies the short- and medium-term effects of Russia's invasion of Ukraine on February 24, 2022 on social trust of adolescents in Germany. Comparing adolescents who responded to our survey shortly before the start of the war with those who responded shortly after the conflict began and applying difference-in-differences (DiD) models over time, we find a significant decline in the outcome after the war started. These findings provide new evidence on how armed conflicts influence social trust and well-being among young people in a country not directly involved in the war.
                 </div>
             </div>
-        </section>
 
-        <!-- Working Papers -->
-        <section id="working-papers" class="section">
-            <div class="section-header">
-                <h2 class="section-title">Working Papers</h2>
-            </div>
+            <!-- Working Papers -->
+            <h3 class="subsection-title">Working Papers</h3>
 
             <div class="publication working-paper">
                 <h3 class="publication-title">Online Tutoring, School Performance, and School-to-Work Transitions: Evidence from a Randomized Controlled Trial</h3>
@@ -576,13 +706,9 @@
                     <span class="journal">HCEO WP</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Work in Progress -->
-        <section id="work-in-progress" class="section">
-            <div class="section-header">
-                <h2 class="section-title">Work in Progress</h2>
-            </div>
+            <!-- Work in Progress -->
+            <h3 class="subsection-title">Work in Progress</h3>
 
             <div class="publication work-in-progress">
                 <h3 class="publication-title">Affirmative Action during Early Childhood: School Choice, Academic Performance and School Satisfaction</h3>
@@ -605,6 +731,119 @@
                 <div class="coauthors">Joint with Mathias Hübener and Jan Marcus</div>
                 <div class="publication-meta">
                     <span class="status-badge">Preliminary Results</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talks & Conferences -->
+        <section id="talks" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Talks & Conferences</h2>
+            </div>
+
+            <div class="talk-item">
+                <h3 class="talk-title">Invited Talks</h3>
+                <div class="talk-list">
+                    University of Bristol, 2024; CINCH, Universität Duisburg-Essen 2023; Universität Gießen 2023; Universität Erlangen-Nürnberg, Germany 2022; EUI Florence, Italy 2022; University of Oslo, Norway 2021; JKU Linz, Austria 2019
+                </div>
+            </div>
+
+            <div class="talk-item">
+                <h3 class="talk-title">Conference Presentations</h3>
+                
+                <div class="conference-year">
+                    <div class="year-header">2024</div>
+                    <div class="conference-list">
+                        Mapping the Effects of Environmental Policies, Hamburg; AFEPOP Paris; ESPE, Rotterdam; EUHEA, Vienna; AFE, London
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2023</div>
+                    <div class="conference-list">
+                        EALE, Prague; Verein für Socialpolitik, Regensburg; Field Experiments in Economics and Business Düsseldorf; Experiments on Social Inequality, Paris; ESPE, Belgrade; Armenian Economic Association, Yerevan
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2022</div>
+                    <div class="conference-list">
+                        7th Lindau Meeting on Economic Sciences, 08/2022; Oslo, EuHEA, 07/2022; Calabria, ESPE, 06/2022; Seminar Talk, EUI, Florence, 03/2022
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2021</div>
+                    <div class="conference-list">
+                        Seminar Talk, University of Oslo, 09/2021
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2019</div>
+                    <div class="conference-list">
+                        Reykjavik, Nordic Health Economic Study Group, 08/2019; Porto, EuHEA PhD-Supervisor Workshop, 09/2019; Linz, 03/2019; Berlin, DIW lunchtime seminar, 03/2019
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2018</div>
+                    <div class="conference-list">
+                        EUHEA, Maastricht, 07/2018; ESPE Antwerp, 06/2018; Essen Health Conference, Health and Environment, Essen 05/2018; SOLE, Toronto, 05/2018; Melbourne Institute of Applied Economic and Social Research Brown Bag, Melbourne, 03/2018
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2017</div>
+                    <div class="conference-list">
+                        EEA, Lisbon 08/2017; Econometrics of Panel Data and Network Analysis, Berlin 08/2017; International Workshop on Applied Economics of Education, Catanzaro 06/2017; ESPE, Glasgow 06/2017; ECSR Spring School, Turin 03/2017; Ifo and TU Dresden 7th Workshop "Labour Economics and Social Policy", Dresden 03/2017; IAB Graduate School, 9th Workshop "Perspectives on (Un-)Employment", Nuremberg 01/2017
+                    </div>
+                </div>
+
+                <div class="conference-year">
+                    <div class="year-header">2016</div>
+                    <div class="conference-list">
+                        3rd BIEN annual conference, Berlin 09/2016
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Teaching</h2>
+            </div>
+
+            <div class="teaching-item">
+                <div class="institution">Universität Potsdam (2021-)</div>
+                <div class="course">
+                    <span class="course-name">Labour and Education Economics</span> lecture + seminar <span class="course-level">[graduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Education, Labour and Health Economics: Applications with SOEP</span> <span class="course-level">[graduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">RDD and SCM</span> lecture <span class="course-level">[graduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Introduction to Economics</span>, practical sessions <span class="course-level">[undergraduate level]</span>
+                </div>
+            </div>
+
+            <div class="teaching-item">
+                <div class="institution">Universität Hamburg (2016-2020)</div>
+                <div class="course">
+                    <span class="course-name">Advanced Econometrics</span>, practical sessions <span class="course-level">[graduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Applied Econometrics I</span>, practical sessions <span class="course-level">[undergraduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Applied Econometrics II</span>, practical sessions <span class="course-level">[undergraduate level]</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Applied Labour Economics</span> seminar <span class="course-level">[undergraduate level]</span>
                 </div>
             </div>
         </section>
